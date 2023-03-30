@@ -27,6 +27,8 @@ namespace BookHavenAppV4.PresentationLayer
         public UserController userController;
         public bool loginFormClosed = false;
         public LoginForm loginForm;
+        MongoClient dbClient = new MongoClient("mongodb+srv://uelosano:<password>@cluster0.3rdqxmz.mongodb.net/?retryWrites=true&w=majority");
+           
         #endregion
 
         #region: Constructors
