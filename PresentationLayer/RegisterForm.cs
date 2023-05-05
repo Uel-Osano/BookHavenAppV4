@@ -16,6 +16,7 @@ using BookHavenAppV4.DatabaseLayer;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
 using MongoDB.Driver;
+using MongoDB.Bson; 
 
 namespace BookHavenAppV4.PresentationLayer
 {
@@ -27,7 +28,8 @@ namespace BookHavenAppV4.PresentationLayer
         public UserController userController;
         public bool loginFormClosed = false;
         public LoginForm loginForm;
-        MongoClient dbClient = new MongoClient("mongodb+srv://uelosano:<password>@cluster0.3rdqxmz.mongodb.net/?retryWrites=true&w=majority");
+        MongoClient dbClient = new MongoClient("mongodb+srv://uelosano:4XIDw5g4Nv6FPTzo@cluster0.3rdqxmz.mongodb.net/?retryWrites=true&w=majority");
+
            
         #endregion
 
